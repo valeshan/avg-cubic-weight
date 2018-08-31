@@ -1,4 +1,4 @@
-//get fetch
+//get dependency
 const fetch = require('node-fetch');
 
 //make request to API using async function
@@ -26,5 +26,15 @@ getCubicWeight().then(data=> data.objects)
                     }
                   });
                   //return the array of converted weights
-                  console.log(airConWeights);
+                  return airConWeights;
+                })
+                .then(airConWeights=>{
+                  //add each weight in array together
+                  let totalWeight =airConWeights.reduce((acc, curr)=> acc + curr, 0);
+
+                  //average the weights
+                  let avgWeight = totalWeight/airConWeights.length;
+
+                  //log out the average aircon weight
+                  console.log(avgWeight);
                 });
