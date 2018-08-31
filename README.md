@@ -4,6 +4,6 @@ This CLI app accesses data through an API, and filters for objects in the air co
 
 ## Setup
 
-First, download the file and then unzip, within your CLI, go into the specified folder directory and type in ```npm install``` to install the required dependency, node-fetch. 
+First, download the file and then unzip, within your CLI, go into the specified folder directory and type in ```npm install``` to install the required dependency, node-fetch.
 
-Once the dependency as been installed, enter ``` node app.js``` to get the average weight of the air conditioners.
+Once the dependency as been installed, enter ``` node app.js``` to get the average weight value of the air conditioners in your console.
